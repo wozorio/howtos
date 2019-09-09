@@ -9,7 +9,7 @@
 `az account set --subscription <subscription_name>`
 
 1. Get credentials of the AKS cluster you want to work with\
-`az aks get-credentials --resource-group <rg_name> --name <aks_cluster_name> --admin`
+`az aks get-credentials --resource-group <resource_group_name> --name <aks_cluster_name> --admin`
 
 1. Access the dashboard of your Kubernetes cluster\
 `kubectl proxy`
