@@ -10,11 +10,10 @@ Once the terminal session is connected to the container, install an SSH client u
 
 Open a new terminal window, not connected to your container, list the pods on your AKS cluster using the kubectl get pods command. The pod created in the previous step starts with the name aks-ssh, as shown in the following example:
 
-```bash
+```
 $ kubectl get pods
 
 NAME                       READY     STATUS    RESTARTS   AGE
-
 aks-ssh-554b746bcf-kbwvf   1/1       Running   0          1m
 ```
 
