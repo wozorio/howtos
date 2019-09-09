@@ -1,33 +1,33 @@
 # Create basic deploymets on AKS
 
-1. Log on to Azure through AzureCLI on PowerShell
+1. Log on to Azure through AzureCLI on PowerShell\
 `az login`
 
-1. Set the subscription you want to work with
-`az account set --subscription OT-BSH-RIOT-Dev`
+1. Set the subscription you want to work with\
+`az account set --subscription <subscription_name>`
 
-1. Get credentials of the AKS cluster you want to work with
-`az aks get-credentials --resource-group "riot-pf-rg-we-dev" --name "riot-pf-aks-we-dev" --admin`
+1. Get credentials of the AKS cluster you want to work with\
+`az aks get-credentials --resource-group <rg_name> --name <aks_cluster_name> --admin`
 
-1. Access the dashboard of your Kubernetes cluster
+1. Access the dashboard of your Kubernetes cluster\
 `kubectl proxy`
 
-1. Enter the following URL on the internet browser
+1. Enter the following URL on the internet browser\
 `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/#!/overview?namespace=default`
 
-1. See which VMs (Worker Nodes) are composing up the Kubernetes cluster
+1. See which VMs (Worker Nodes) are composing up the Kubernetes cluster\
 `kubectl get nodes`
 
-1. Create a new namespace
+1. Create a new namespace\
 `kubectl create ns foo`
 
-1. Run your app under your namespace
+1. Run your app under your namespace\
 `kubectl run apache --namespace default --image=httpd --replicas=1 --port=80 --labels="app=apache"`
 
-1. Create a service to expose the containers and load-balance user requests
+1. Create a service to expose the containers and load-balance user requests\
 `kubectl expose --namespace default deployment apache --name apache-svc --port=80 --target-port=80 --type=LoadBalancer`
 
-1. Alternatively, you can also create a YAML file with the desired config and apply it using the syntax below.
+1. Alternatively, you can also create a YAML file with the desired config and apply it using the syntax below:\
 
 **apache-service.yaml**
 ```yaml
