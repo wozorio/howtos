@@ -1,5 +1,7 @@
 # Create basic deploymets on AKS
 
+> **NOTE**: this procedure describes how to run a simple apache pod on AKS
+
 1. Log on to Azure through AzureCLI on PowerShell\
 `az login`
 
