@@ -29,7 +29,7 @@
 1. Create a service to expose the containers and load-balance user requests\
 `kubectl expose --namespace default deployment apache --name apache-svc --port=80 --target-port=80 --type=LoadBalancer`
 
-1. Alternatively, you can also create a YAML file with the desired config and apply it using the syntax below:\
+1. Alternatively, you can also create a YAML file with the desired config and apply it using the syntax below:
 
 **apache-service.yaml**
 ```yaml
