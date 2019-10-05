@@ -11,12 +11,6 @@
 1. Get credentials of the AKS cluster you want to work with\
 `az aks get-credentials --resource-group <resource_group_name> --name <aks_cluster_name> --admin`
 
-1. Access the dashboard of your Kubernetes cluster\
-`kubectl proxy`
-
-1. Enter the following URL on the internet browser\
-`http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/#!/overview?namespace=default`
-
 1. See which VMs (Worker Nodes) are composing up the Kubernetes cluster\
 `kubectl get nodes`
 
@@ -53,3 +47,8 @@ spec:
 ```
 
 `kubectl create -f .\apache-service.yaml --namespace foo`
+1. Access the dashboard of your Kubernetes cluster\
+`kubectl proxy`
+
+1. Enter the following URL on the internet browser\
+`http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/#!/overview?namespace=default`
