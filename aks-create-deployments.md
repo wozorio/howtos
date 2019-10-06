@@ -18,10 +18,10 @@
 `kubectl create ns foo`
 
 1. Run your app under your namespace\
-`kubectl run apache --namespace default --image=httpd --replicas=1 --port=80 --labels="app=apache"`
+`kubectl run apache --namespace foo --image=httpd --replicas=1 --port=80 --labels="app=apache"`
 
 1. Create a service to expose the containers and load-balance user requests\
-`kubectl expose --namespace default deployment apache --name apache-svc --port=80 --target-port=80 --type=LoadBalancer`
+`kubectl expose --namespace foo deployment apache --name apache-svc --port=80 --target-port=80 --type=LoadBalancer`
 
 1. Alternatively, you can also create a YAML file with the desired config and apply it using the syntax below:
 
@@ -45,3 +45,5 @@ spec:
   selector:
     app: apache
 ```
+
+`kubectl apply -f apache-service.yaml --namespace foo`
