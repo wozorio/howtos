@@ -45,10 +45,3 @@ spec:
   selector:
     app: apache
 ```
-
-`kubectl create -f .\apache-service.yaml --namespace foo`
-1. Access the dashboard of your Kubernetes cluster\
-`kubectl proxy`
-
-1. Enter the following URL on the internet browser\
-`http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/#!/overview?namespace=default`
