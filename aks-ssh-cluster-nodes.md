@@ -7,13 +7,12 @@
 `apt-get update && apt-get install openssh-client -y`
 
 1. Open a new terminal window, not connected to your container, list the pods on your AKS cluster using the kubectl get pods command. The pod created in the previous step starts with the name aks-ssh, as shown in the following example
-
     ```bash
     $ kubectl get pods
     NAME                       READY     STATUS    RESTARTS   AGE
     aks-ssh-554b746bcf-kbwvf   1/1       Running   0          1m
     ```
-1. Now, copy your private SSH key into the helper pod. This private key is used to SSH into the AKS node
+1. Now copy your private SSH key into the helper pod. This private key is used to SSH into the AKS node
 
 1. Provide your own aks-ssh pod name obtained in the previous step. If needed, change ~/.ssh/id_rsa to location of your private SSH key\
 `kubectl cp id_rsa aks-ssh-554b746bcf-kbwvf:/id_rsa`
