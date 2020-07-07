@@ -30,7 +30,7 @@
             - name: apache
               image: httpd:2.4
               ports:
-                - containerPort: 80
+                - containerPort: 8080
     ```
  1. Apply the deployment manifest\
 `kubectl apply -f apache-deployment.yaml --namespace foo`
@@ -65,4 +65,4 @@
 `kubectl apply -f apache-service.yaml --namespace foo`
 
 1. Alternatively the deployment can also be exposed with kubectl expose\
-`kubectl expose --namespace foo deployment apache --name apache-svc --port=80 --target-port=8080 --type=LoadBalancer`
+`kubectl expose --namespace foo deployment apache --name apache --port=80 --target-port=8080 --type=LoadBalancer`
