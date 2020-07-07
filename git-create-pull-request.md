@@ -21,13 +21,13 @@ Or\
 `git add <file_name>` (to add individual files)
 
 1. Commit the changes\
-git commit -m "JIRA-1234: Add tags to the resources"
+`git commit -m "JIRA-1234: Add tags to the resources"`
 
 1. Push the changes\
-git push origin feature/JIRA-1234-feature-branch-description
+`git push origin feature/JIRA-1234-feature-branch-description`
 
 1. Log on to GitHub and create a pull request\
 https://github.com/wozorio/docs/pulls
 
 1. Switch back to the master branch\
-git checkout master
+`git checkout master`
