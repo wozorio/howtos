@@ -1,5 +1,4 @@
 # Create a custom Docker image without using a Dockerfile
-
 This is a quick reference guide on how to create custom Docker images without using Dockerfiles.
 
 1. Create a container with the desired base OS image and run it in interactive mode\
