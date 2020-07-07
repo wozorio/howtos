@@ -1,4 +1,4 @@
-# Azure - AKS - Create and expose deployments
+# Kubernetes - Create and expose deployments
 
 1. Create a new namespace\
 `kubectl create ns foo`
