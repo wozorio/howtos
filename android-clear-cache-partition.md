@@ -1,6 +1,4 @@
-# Clear the cache partition
-
-## Motorola G series phones
+# Android - Clear the cache partition on Motorola G series phones
 
 1. Power off the device and unplug it.
 1. Press and hold the Volume Down button. While still holding Volume Down button,
