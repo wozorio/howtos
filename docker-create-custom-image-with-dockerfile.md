@@ -24,17 +24,23 @@ This is a quick reference guide on how to create custom Docker images using Dock
     # Start Apache as a daemon in foreground mode
     CMD ["apachectl", "-D", "FOREGROUND"]
     ```
-1. Build the image\
-`docker build -t wozorio/sandbox:apache2-1.0-ubuntu .`
-
-1. Check if the new image was properly created and copy its ID\
-`docker images`
-
-1. Verify if a container is successfully created from the new image\
-`docker run -d wozorio/sandbox:apache2-1.0-ubuntu`
-
-1. Log on to Dokcer Hub\
-`docker login`
-
-1. Push the new image to Docker Hub\
-`docker image push wozorio/sandbox:apache2-1.0-ubuntu`
+1. Build the image
+    ```bash
+    docker build -t wozorio/sandbox:apache2-1.0-ubuntu .
+    ```
+1. Check if the new image was properly created and copy its ID
+    ```bash
+    docker images
+    ```
+1. Verify if a container is successfully created from the new image
+    ```bash
+    docker run -d wozorio/sandbox:apache2-1.0-ubuntu
+    ```
+1. Log on to Dokcer Hub
+    ```bash
+    docker login
+    ```
+1. Push the new image to Docker Hub
+    ```bash
+    docker image push wozorio/sandbox:apache2-1.0-ubuntu
+    ```
