@@ -1,5 +1,4 @@
 # Create a custom Docker image using a Dockerfile
-This is a quick reference guide on how to create custom Docker images using Dockerfiles.
 
 1. Create a file called Dockerfile with the desired config
     ```dockerfile
