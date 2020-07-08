@@ -1,4 +1,4 @@
-# Create a custom Docker image without using a Dockerfile
+# Docker - Create a custom Docker image without using a Dockerfile
 
 1. Create a container with the desired base OS image and run it in interactive mode
     ```bash
