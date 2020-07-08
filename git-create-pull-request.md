@@ -33,11 +33,10 @@
     ```bash
     git push origin feature/JIRA-1234-feature-branch-description
     ```
-1. Log on to GitHub and create a pull request
+1. Log on to GitHub and create a pull request  
 https://github.com/wozorio/docs/pulls
 
 1. Switch back to the master branch
     ```bash
     git checkout master
     ```
-    
