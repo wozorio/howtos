@@ -1,4 +1,4 @@
-# Docker - Create a custom Docker image using a Dockerfile
+# Docker - Create a custom image using a Dockerfile
 
 1. Create a file called Dockerfile with the desired config
     ```dockerfile
