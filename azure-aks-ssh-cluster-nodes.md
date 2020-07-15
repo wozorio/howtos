@@ -4,7 +4,6 @@
     ```bash
     kubectl run -it --rm aks-ssh --image=debian
     ```
-
 1. Once the terminal session is connected to the container, install an SSH client using apt-get
     ```bash
     apt-get update && apt-get install openssh-client -y
