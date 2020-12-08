@@ -25,7 +25,7 @@
     ```
 1. Build the image
     ```bash
-    docker build -t wozorio/sandbox:apache2-1.0-ubuntu .
+    docker build . -t wozorio/sandbox:apache2-1.0-ubuntu
     ```
 1. Check if the new image was properly created and copy its ID
     ```bash
