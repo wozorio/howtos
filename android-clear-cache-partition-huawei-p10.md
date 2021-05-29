@@ -1,3 +1,5 @@
+# Android - Clear the cache partition on Huawei P10 phones
+
 1. Turn off the Huawei P10.
 1. Hold down the Power button and the Volume Up button simultaneously, until the Huawei logo appears, disappears, and leaves a black screen.
 1. Release the buttons, and the boot menu will appear.
