@@ -1,3 +1,5 @@
+# Git Cheat Sheet
+
 1. Set Name & E-mail address in Git config
     ```bash
     git config --global user.name "Wellington Ozorio"
