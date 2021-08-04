@@ -1,4 +1,4 @@
-# Kubernetes - Useful commands
+# Kubernetes Cheat Sheet
 
 1. Get cluster information
     ```bash
