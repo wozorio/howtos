@@ -1,8 +1,8 @@
 # Azure - Azure CLI - Login (Service Principal)
 
-1. Login with a Service Principal
+1. Login
     ```bash
-    az login --service-principal -u <service_principal_id> -p <password> --tenant <tenant_id>
+    az login
     ```
 1. List all subscriptions
     ```bash

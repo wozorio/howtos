@@ -20,6 +20,10 @@
     ```bash
     kubectl config use-context <context_name>
     ```
+1. Change the default namespace
+    ```
+    kubectl config set-context --current --namespace=<namespace_name>
+    ```
 1. Access the Kubernetes dashboard
     ```bash
     kubectl proxy

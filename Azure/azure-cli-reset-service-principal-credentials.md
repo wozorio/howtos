@@ -1,4 +1,4 @@
 # Azure - Azure CLI - Reset Service Principal credentials
-```azcli
+```bash
 az ad sp credential reset --name <ServicePrincipalName> --password <NewStrongPassword>
 ```
