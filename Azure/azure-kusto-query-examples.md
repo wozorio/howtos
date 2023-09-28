@@ -23,5 +23,4 @@ AzureDiagnostics
 | where Category == "ApplicationGatewayFirewallLog"
 | where * contains "prompt"
 | where requestUri_s == "/auth/api/v1/authentication/login"
-
 ```
