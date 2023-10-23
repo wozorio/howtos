@@ -17,7 +17,7 @@
 1. Copy the root CA certificate to the `ca-certificates` directory
 
    ```bash
-   sudo cp {{ file_name }}.crt /usr/local/share/ca-certificates
+   sudo cp FILENAME.crt /usr/local/share/ca-certificates
    ```
 
 1. Update `ca-certificates`
