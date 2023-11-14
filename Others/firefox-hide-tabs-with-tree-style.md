@@ -40,4 +40,4 @@ When using this extension, the native tab bar becomes obsolete. The following pa
 
 1. Restart Firefox
 
-Now the native tab should be hidden. To reset the change simply remove the userCrhome.css file.
+Now the native tab should be hidden. To reset the change simply remove the userChrome.css file.
