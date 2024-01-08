@@ -1,7 +1,6 @@
 # Git - Delete all local branches
 
 First, switch to the branch you want to keep, ex: master:
-
 ```
 git checkout master
 ```

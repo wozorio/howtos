@@ -1,7 +1,6 @@
 # Kubernetes - SSH into worker nodes with node-shell
 
 1. Install Krew https://krew.sigs.k8s.io/docs/user-guide/setup/install/
-
 1. Add the repo for node-shell
    ```
    kubectl krew index add kvaps https://github.com/kvaps/krew-index
