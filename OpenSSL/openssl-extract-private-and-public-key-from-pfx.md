@@ -1,13 +1,10 @@
 # OpenSSL - Extract private key and public cert from PFX
 
 1. Extract the private key
-
    ```
    CERT_NAME="my_certificate_name"
-
    openssl pkcs12 -in ${CERT_NAME}.pfx -passin pass: -nodes -nocerts -out ${CERT_NAME}.key
    ```
-
 1. Extract the public certificate
    ```
    openssl pkcs12 -in ${CERT_NAME}.pfx -passin pass: -clcerts -nokeys -out ${CERT_NAME}.crt

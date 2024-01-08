@@ -1,7 +1,6 @@
 # Docker - Create a custom image using a Dockerfile
 
-1. Create a file called Dockerfile with the desired config
-
+1. Create a file called `Dockerfile` with the desired config
    ```dockerfile
    # Base OS image to be used
    FROM ubuntu:xenial
@@ -24,7 +23,6 @@
    # Start Apache as a daemon in foreground mode
    CMD ["apachectl", "-D", "FOREGROUND"]
    ```
-
 1. Build the image
    ```bash
    docker build . -t wozorio/sandbox:apache2-1.0-ubuntu
