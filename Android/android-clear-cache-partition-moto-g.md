@@ -2,12 +2,12 @@
 
 1. Power off the device and unplug it
 
-1. Press and hold the Volume Down button. While still holding Volume Down button,
+1. Press and hold the Volume Down button. While still holding Volume Down button,  
    press and release the Power button
 
 1. Press and release the Volume Down button until you reach Recovery Mode
 
-1. Press and release the Power button to select Recovery Mode. The device will restart
+1. Press and release the Power button to select Recovery Mode. The device will restart  
    An image of an Android robot with a red exclamation mark will appear
 
 1. Press and hold the Power button, press the Volume Up button once and then release the Power button

@@ -28,8 +28,8 @@
    ```bash
    kubectl proxy
    ```
-1. On the computer where `kubectl proxy` was executed, open up a browser and enter the appropriate address
-   **K8s 1.15 and below**: `http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard:/proxy`
+1. On the computer where `kubectl proxy` was executed, open up a browser and enter the appropriate address  
+   **K8s 1.15 and below**: `http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard:/proxy`  
    **K8s 1.16 or greater**: `http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy`
 
 1. Port forward a deployment to the client machine
