@@ -8,27 +8,24 @@ When using this extension, the native tab bar becomes obsolete. The following pa
 1. Look for the Profile Folder entry and click on Open folder.
 1. Create a file named chrome/userChrome.css in the directory:
    ```bash
-     mkdir chrome && touch chrome/userChrome.css
+   mkdir chrome && touch chrome/userChrome.css
    ```
 1. Populate the file with the following CSS code:
    ```javascript
-     #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar>.toolbar-items {
+   #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
      opacity: 0;
      pointer-events: none;
-     }
-
-     #main-window:not([tabsintitlebar="true"]) #TabsToolbar {
-     visibility: collapse !important;
-     }
-
-     #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+   }
+   #main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+       visibility: collapse !important;
+   }
+   #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
      display: none;
-     }
-
-     .tab {
+   }
+   .tab {
      margin-left: 1px;
      margin-right: 1px;
-     }
+    }
    ```
 1. Then type `about:config` into the address bar and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 1. Restart Firefox
