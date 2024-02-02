@@ -7,6 +7,7 @@ Existe um bug na interface gráfica do roteador que não permite configurar ende
 1. Abra o navegador (ex: Google Chrome) e navegue até a página LAN IPv6 Settings
 1. Pressione F12 para abrir o modo Developer Tools
 1. Copie e cole o script abaixo na aba Console e pressione Enter
+
    ```javascript
    /*
    DISCLAIMER
@@ -26,4 +27,5 @@ Existe um bug na interface gráfica do roteador que não permite configurar ende
      arLanGatewayIp2.original_set.call(this, index, value, label, forceSubmit);
    };
    ```
+
 1. Entre com os endereços IPv6 de DNS primário e secundário no campo DNS Override e pressione o botão Apply
